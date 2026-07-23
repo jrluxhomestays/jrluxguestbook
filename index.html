@@ -744,4 +744,40 @@
 <section class="fade-in" style="text-align:center; max-width:700px;">
   <div class="section-eyebrow">Final Page</div>
   <h2 class="section-title">The JRLUX <em>Promise</em></h2>
-  <p class="section-body">Every JRLUX residence, wherever it stands, is
+  <p class="section-body">Every JRLUX residence, wherever it stands, is held to the same quiet standard.</p>
+  <div class="promise-lines">
+    <div class="promise-line">Prepare with Care.</div>
+    <div class="promise-line">Stay with Respect.</div>
+    <div class="promise-line">Leave with Kindness.</div>
+  </div>
+  <div class="promise-final">Together, We Create a Better Stay.</div>
+</section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <svg width="180" height="55" viewBox="0 0 260 80" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:0 auto;">
+      <circle cx="40" cy="40" r="34" fill="none" stroke="#C9A84C" stroke-width="1.8"/>
+      <circle cx="40" cy="40" r="27" fill="none" stroke="#C9A84C" stroke-width="0.5" opacity="0.4"/>
+      <text x="40" y="48" font-family="Georgia,serif" font-size="24" font-weight="700" fill="#C9A84C" text-anchor="middle" letter-spacing="1.5">JR</text>
+      <line x1="84" y1="16" x2="84" y2="64" stroke="#C9A84C" stroke-width="0.6" opacity="0.35"/>
+      <text x="98" y="44" font-family="Georgia,serif" font-size="30" font-weight="400" fill="#FFFFFF" letter-spacing="7">LUX</text>
+      <text x="99" y="60" font-family="Georgia,serif" font-size="8" fill="#C9A84C" letter-spacing="3.5">HOMESTAYS</text>
+    </svg>
+  </div>
+  <div class="footer-sub">Star Residences One &nbsp;·&nbsp; KLCC, Kuala Lumpur, Malaysia</div>
+  <div class="footer-line"></div>
+  <p class="footer-note">Thank you for choosing JRLUX Homestays. We hope this stay has felt like a home prepared, not just a place to stay. Please leave us a review — your feedback means the world to us and helps future guests find their home away from home.</p>
+  <div style="margin-top:1.5rem; font-size:0.65rem; color:rgba(255,255,255,0.2); letter-spacing:0.1em; text-transform:uppercase;">JRLUX Homestays Collection · Prepared With Care</div>
+</footer>
+
+<script>
+  // Fade in on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
